@@ -25,16 +25,32 @@
 var calc = document.getElementById("btn1");
 calc.addEventListener("click", getAvarage);
 function getAvarage() {
-   inputMath = document.getElementById("math").value;
+  inputMath = document.getElementById("math").value;
   let math = parseFloat(inputMath);
-  console.log(math);
-   inputPhysics = document.getElementById("physics").value;
+  // console.log(math);
+  inputPhysics = document.getElementById("physics").value;
   let physics = parseFloat(inputPhysics);
-  console.log(physics);
-   inputChemistry = document.getElementById("chemistry").value;
+  // console.log(physics);
+  inputChemistry = document.getElementById("chemistry").value;
   let chemistry = parseFloat(inputChemistry);
-  console.log(chemistry);
+  // console.log(chemistry);
   let avarage = (math + physics + chemistry) / 3;
+  document.getElementById("result1").innerHTML =
+    "Điểm trung bình môn là: " + avarage;
+}
 
-  document.getElementById("result1").innerHTML = "Điểm trung bình môn là: " + avarage;
+var calcu = document.getElementById("btn2");
+calcu.addEventListener("click", getTotal);
+function getTotal() {
+  inputMath = document.getElementById("math").value;
+  let math = parseFloat(inputMath);
+  // console.log(math);
+  inputPhysics = document.getElementById("physics").value;
+  let physics = parseFloat(inputPhysics);
+  // console.log(physics);
+  inputChemistry = document.getElementById("chemistry").value;
+  let chemistry = parseFloat(inputChemistry);
+  // console.log(chemistry);
+  let total = math + physics + chemistry;
+  document.getElementById("result1").innerHTML = "Tổng điểm môn là: " + total;
 }
