@@ -18,4 +18,6 @@ if (Math > 0 && Phycis > 0 && Chemistry > 0) {
   document.write("Diem trung binh mon: " + Avarage + " diem");
   document.write("</br>");
   document.write("Tong: " + Tatol + " diem");
+}else{
+    document.write("Input again");
 }
